@@ -1,0 +1,3 @@
+# Projeto: Criando uma API para catalogar jogos usando boas práticas de arquitetura com .NET :thumbsup:
+
+### Projeto desenvolvido em .NET durante o Bootcamp GFT START #2 .NET com o objetivo de criar uma API que possa catalogar jogos com Título, Produtora e Preço. Oferecendo funções como listar, selecionar por Id, alterar parâmetros desejáveis, alterar preço apenas e deletar. :slightly_smiling_face:

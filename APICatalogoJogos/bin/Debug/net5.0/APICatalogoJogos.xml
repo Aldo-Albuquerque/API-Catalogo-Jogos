@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APICatalogoJogos</name>
+    </assembly>
+    <members>
+        <member name="M:APICatalogoJogos.Controllers.V1.JogosController.Obter(System.Int32,System.Int32)">
+            <summary>
+            Obter jogos por páginas;
+            </summary>
+            <remarks>
+            Impossível obter os jogos sem paginação;
+            </remarks>
+            <param name="pagina">Indicar página a ser consultada. Min 1;</param>
+            <param name="quantidade">Indicar número de jogos a serem exibidos por página. Min 1, Max 50;</param>
+            <response code="200">Exibir os jogos;</response>
+            <response code="204">Caso não hajo jogos;</response>
+        </member>
+        <member name="M:APICatalogoJogos.Controllers.V1.JogosController.Obter(System.Guid)">
+            <summary>
+            Obter jogo por Id;
+            </summary>
+            <param name="idJogo">Indicar Id do jogo a ser consultado;</param>
+            <response code="200">Exibir jogo indicado;</response>
+        </member>
+        <member name="M:APICatalogoJogos.Controllers.V1.JogosController.AdicionarJogo(APICatalogoJogos.InputModel.JogoInputModel)">
+            <summary>
+            Adicionar Jogo;
+            </summary>
+            <param name="jogoInputModel">Adicionar jogo com Título, Produtora e Preço;</param>
+            <response code="200">Jogo adicionado com sucesso;</response>
+        </member>
+        <member name="M:APICatalogoJogos.Controllers.V1.JogosController.AtualizarJogo(System.Guid,APICatalogoJogos.InputModel.JogoInputModel)">
+            <summary>
+            Alterar jogo por Id;
+            </summary>
+            <param name="idJogo">Indicar Id do jogo a ser alterado;</param>
+            <param name="jogoInputModel">Alterar jogo nos parâmetros indicados: Título/Produtora/Preço;</param>
+            <response code="200">Jogo alterado com sucesso;</response>
+        </member>
+        <member name="M:APICatalogoJogos.Controllers.V1.JogosController.AtualizarJogo(System.Guid,System.Double)">
+            <summary>
+            Alterar preço de jogo por Id;
+            </summary>
+            <param name="idJogo">Indicar Id do jogo a ser alterado;</param>
+            <param name="preco">Definir novo preço para o jodo indicado;</param>
+            <response code="200">Jogo alterado com sucesso;</response>
+        </member>
+        <member name="M:APICatalogoJogos.Controllers.V1.JogosController.DeletarJogo(System.Guid)">
+            <summary>
+            Deletar jogo por Id;
+            </summary>
+            <param name="idJogo">Indicar Id do jogo a ser deletado;</param>
+            <response code="200">Jogo deletado com sucesso;</response>
+        </member>
+    </members>
+</doc>
